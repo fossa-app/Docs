@@ -10,5 +10,6 @@ Function gig {
 
 gig -list powershell, obsidian, visualstudiocode, macos, windows, linux
 
-Add-Content -Path .\.gitignore -Value '# Repository Specific'
-Add-Content -Path .\.gitignore -Value '.trash'
+Add-Content -Path .\.gitignore -Value '# Repository Specific' -Encoding ascii
+Add-Content -Path .\.gitignore -Value '.trash' -Encoding ascii
+Add-Content -Path .\.gitignore -Value '.vault-nickname' -Encoding ascii
