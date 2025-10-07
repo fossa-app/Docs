@@ -12,3 +12,7 @@ An employee record may not be deleted if there is another employee whose `Report
 During the modification of employee's `ReportsToId` makes sure an employee with the given Id exists.
 Cyclical references are not allowed.
 The employee listing endpoints support filtering either by `ReportsToId` or by the `TopLevelOnly` Boolean flag, which returns only employees without a `ReportsToId` (i.e., where `ReportsToId` is `NULL`).
+### Management of Employee Job Title
+#### Management of Employee Job Title API
+Employee Managements endpoint includes `JobTitle` which is nullable, not empty string and can be edited only by administrators.
+Job Title can't be set as `NULL`, empty string or white spaces.
