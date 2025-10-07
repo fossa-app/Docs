@@ -14,5 +14,5 @@ Cyclical references are not allowed.
 The employee listing endpoints support filtering either by `ReportsToId` or by the `TopLevelOnly` Boolean flag, which returns only employees without a `ReportsToId` (i.e., where `ReportsToId` is `NULL`).
 ### Management of Employee Job Title
 #### Management of Employee Job Title API
-Employee Managements endpoint includes `JobTitle` which is nullable, not empty string and can be edited only by administrators.
+Employee Managements endpoint includes `JobTitle` which is non-nullable, string, with initial empty string value, and can be edited only by administrators.
 Job Title can't be set as `NULL`, empty string or white spaces.
